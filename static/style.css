@@ -157,10 +157,9 @@ td {
 
 form#formulario2>*:first-child{
   margin-top: 10px;
-  padding: 10px;
+  padding-top: 30px;
 }
 
 form#formulario2 label{
   margin-left:30%;
-  
 }

@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
-    </style>
 
-    <!-- Completa tu nombre -->
-    <title>Javier Ramos del Río</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+  </style>
 
-    <link rel="stylesheet" href="static/style.css" />
-  </head>
-  <body>
-    <!-- Completar html aqui -->
-    <div id="container">
-      <form action="" id="formulario1">
-        <h1 class="tittle">Aplicación de dietas</h1>
-        <div class="blanco">
-            <table>
-            <tr>
-                <th>Nombre</th>
-                <th>Sexo</th>
-                <th>Edad</th>
-                <th>Altura</th>
-                <th>Peso</th>
-                <th>Actividad</th>
-                <th>IM Basal</th>
-                <th>Calorías necesarias</th>
-            </tr>
-            <tr>
-                <td>Francisco Romero</td>
-                <td><span class="hombre">hombre</span></td>
-                <td>31</td>
-                <td>198</td>
-                <td>89</td>
-                <td><span class="actividad">alta</span></td>
-                <td>1427 kCal</td>
-                <td>1712 kCal</td>
-            </tr>
-            <tr>
-                <td>Jose Antonio Lara</td>
-                <td><span class="hombre">hombre</span></td>
-                <td>46</td>
-                <td>187</td>
-                <td>85</td>
-                <td><span class="actividad">moderada</span></td>
-                <td>1333 kCal</td>
-                <td>1435 kCal</td>
-            </tr>
-            <tr>
-                <td>Jeniffer Lopez</td>
-                <td><span class="mujer">mujer</span></td>
-                <td>45</td>
-                <td>167</td>
-                <td>56</td>
-                <td><span class="actividad">alta</span></td>
-                <td>1256 kCal</td>
-                <td>1542 kCal</td>
-            </tr>
-            <tr>
-              <td>Paquito Palotes</td>
-              <td><span class="hombre">hombre</span></td>
-              <td>68</td>
-              <td>127</td>
-              <td>56</td>
-              <td><span class="actividad">baja</span></td>
-              <td>1236 kCal</td>
-              <td>1833 kCal</td>
+  <!-- Completa tu nombre -->
+  <title>Javier Ramos del Río</title>
+
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body>
+  <!-- Completar html aqui -->
+  <div id="container">
+    <form action="" id="formulario1">
+      <h1 class="tittle">Aplicación de dietas</h1>
+      <div class="blanco">
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Sexo</th>
+            <th>Edad</th>
+            <th>Altura</th>
+            <th>Peso</th>
+            <th>Actividad</th>
+            <th>IM Basal</th>
+            <th>Calorías necesarias</th>
+          </tr>
+          <tr>
+            <td>Francisco Romero</td>
+            <td><span class="hombre">hombre</span></td>
+            <td>31</td>
+            <td>198</td>
+            <td>89</td>
+            <td><span class="actividad">alta</span></td>
+            <td>1427 kCal</td>
+            <td>1712 kCal</td>
+          </tr>
+          <tr>
+            <td>Jose Antonio Lara</td>
+            <td><span class="hombre">hombre</span></td>
+            <td>46</td>
+            <td>187</td>
+            <td>85</td>
+            <td><span class="actividad">moderada</span></td>
+            <td>1333 kCal</td>
+            <td>1435 kCal</td>
+          </tr>
+          <tr>
+            <td>Jeniffer Lopez</td>
+            <td><span class="mujer">mujer</span></td>
+            <td>45</td>
+            <td>167</td>
+            <td>56</td>
+            <td><span class="actividad">alta</span></td>
+            <td>1256 kCal</td>
+            <td>1542 kCal</td>
+          </tr>
+          <tr>
+            <td>Paquito Palotes</td>
+            <td><span class="hombre">hombre</span></td>
+            <td>68</td>
+            <td>127</td>
+            <td>56</td>
+            <td><span class="actividad">baja</span></td>
+            <td>1236 kCal</td>
+            <td>1833 kCal</td>
           </tr>
           <tr>
             <td>Paqui Lopez</td>
@@ -85,58 +84,57 @@
             <td><span class="actividad">baja</span></td>
             <td>1451 kCal</td>
             <td>1678 kCal</td>
-        </tr>
-            </table>
-        
+          </tr>
+        </table>
+
         <button type="button" value="submit" class="boton" onclick="addClient()">
           Añadir cliente
         </button>
-        </div>
-        <span class="footer">Javier Ramos© 2022</span>
+      </div>
+      <span class="footer">Javier Ramos© 2022</span>
+
+    </form>
+  </div>
+
+
+
+  <div id="cliente">
+    <h1 class="tittle">Nuevo cliente</h1>
+    <div class="blanco2">
+      <form action="" id="formulario2">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br><br>
+
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" id="hombre">Hombre</input>
+        <input type="radio" name="sexo" id="mujer" checked>Mujer</input><br><br>
+
+        <label for="Edad">Edad: </label>
+        <input type="text" name="edad" id="edad" placeholder="20"><br><br>
+
+        <label for="altura" id="altura">Altura (cm): </label>
+        <input type="number" name="altura" id="altura" value="165"><br><br>
+
+        <label for="peso" id="peso">Peso: </label>
+        <input type="number" name="peso" id="peso" value="65"><br><br>
+
+        <label for="actividad" id="actividad">Actividad física: </label>
+        <select id="actividad" name="actividad">
+          <option value="baja">baja</option>
+          <option value="moderada">moderada</option>
+          <option value="alta" selected>alta</option>
+        </select><br><br>
+
+        <button type="button" value="addClient" class="boton2">
+          Añadir cliente
+        </button>
+        <button type="button" value="back" class="boton3" onclick="volverAtras()">
+          Volver atrás
+        </button>
 
       </form>
     </div>
-
-
-
-    <div id="cliente">
-          <h1 class="tittle">Nuevo cliente</h1>
-          <form action="" id="formulario2">
-          <div class="blanco2">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre"><br><br>
-
-            <label for="sexo">Sexo: </label>
-            <input type="radio" name="sexo" id="hombre">Hombre</input>
-            <input type="radio" name="sexo" id="mujer" checked>Mujer</input><br><br>
-
-            <label for="Edad">Edad: </label>
-            <input type="text" name="edad" id="edad" placeholder="20"><br><br>
-
-            <label for="altura" id="altura">Altura (cm): </label>
-            <input type="number" name="altura" id="altura" value="165"><br><br>
-
-            <label for="peso" id="peso">Peso: </label>
-            <input type="number" name="peso" id="peso" value="65"><br><br>
-
-            <label for="actividad" id="actividad">Actividad física: </label>
-            <select id="actividad" name="actividad">
-                <option value="baja">baja</option>
-                <option value="moderada">moderada</option>
-                <option value="alta" selected>alta</option>
-            </select><br><br>
-
-
-          <button type="button" value="addClient" class="boton2">
-            Añadir cliente
-          </button>
-          <button type="button" value="back" class="boton3" onclick="volverAtras()">
-            Volver atrás
-          </button>
-          </div>
-  
-        </form>
-      </div>
-    <script src="static/app.js"></script>
-  </body>
+  </div>
+  <script src="static/app.js"></script>
+</body>
 </html>
