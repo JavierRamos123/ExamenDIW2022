@@ -15,13 +15,13 @@
     </style>
 
     <!-- Completa tu nombre -->
-    <title>NOMBRE_DEL_ALUMNO</title>
+    <title>Javier Ramos del Río</title>
 
     <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
     <!-- Completar html aqui -->
-    <div class="container">
+    <div id="container">
       <form action="" id="formulario1">
         <h1 class="tittle">Aplicación de dietas</h1>
         <div class="blanco">
@@ -38,99 +38,86 @@
             </tr>
             <tr>
                 <td>Francisco Romero</td>
-                <td>
-                    <select name="sexo" id="sexo">
-                        <option value="Hombre">hombre</option>
-                        <option value="Hombre">mujer</option>
-                    </select>
-                </td>
+                <td><span class="hombre">hombre</span></td>
                 <td>31</td>
                 <td>198</td>
                 <td>89</td>
-                <td>
-                    <select name="actividad" id="actividad">
-                        <option value="baja">baja</option>
-                        <option value="moderada" selected>moderada</option>
-                        <option value="alta">alta</option>
-                    </select>
-                </td>
+                <td><span class="actividad">alta</span></td>
                 <td>1427 kCal</td>
                 <td>1712 kCal</td>
             </tr>
             <tr>
                 <td>Jose Antonio Lara</td>
-                <td>
-                    <select name="sexo" id="sexo">
-                        <option value="Hombre">hombre</option>
-                        <option value="Hombre">mujer</option>
-                    </select>
-                </td>
+                <td><span class="hombre">hombre</span></td>
                 <td>46</td>
                 <td>187</td>
                 <td>85</td>
-                <td>
-                    <select name="actividad" id="actividad">
-                        <option value="baja">baja</option>
-                        <option value="moderada" selected>moderada</option>
-                        <option value="alta">alta</option>
-                    </select>
-                </td>
+                <td><span class="actividad">moderada</span></td>
                 <td>1333 kCal</td>
                 <td>1435 kCal</td>
             </tr>
             <tr>
                 <td>Jeniffer Lopez</td>
-                <td>
-                    <select name="sexo" id="sexo">
-                        <option value="Hombre">hombre</option>
-                        <option value="Hombre" selected>mujer</option>
-                    </select>
-                </td>
+                <td><span class="mujer">mujer</span></td>
                 <td>45</td>
                 <td>167</td>
                 <td>56</td>
-                <td>
-                    <select name="actividad" id="actividad">
-                        <option value="baja">baja</option>
-                        <option value="moderada">moderada</option>
-                        <option value="alta" selected>alta</option>
-                    </select>
-                </td>
+                <td><span class="actividad">alta</span></td>
                 <td>1256 kCal</td>
-                <td>1943 kCal</td>
+                <td>1542 kCal</td>
             </tr>
+            <tr>
+              <td>Paquito Palotes</td>
+              <td><span class="hombre">hombre</span></td>
+              <td>68</td>
+              <td>127</td>
+              <td>56</td>
+              <td><span class="actividad">baja</span></td>
+              <td>1236 kCal</td>
+              <td>1833 kCal</td>
+          </tr>
+          <tr>
+            <td>Paqui Lopez</td>
+            <td><span class="mujer">mujer</span></td>
+            <td>25</td>
+            <td>147</td>
+            <td>59</td>
+            <td><span class="actividad">baja</span></td>
+            <td>1451 kCal</td>
+            <td>1678 kCal</td>
+        </tr>
             </table>
         
-        <button type="submit" form="formulario1" value="submit" class="boton" onclick="boton1('cliente', 'block')">
+        <button type="button" value="submit" class="boton" onclick="addClient()">
           Añadir cliente
         </button>
         </div>
-        <p class="footer">Javier Ramos© 2022</p>
+        <span class="footer">Javier Ramos© 2022</span>
 
       </form>
     </div>
 
 
 
-    <div class="container" id="cliente">
-        <form action="" id="formulario2">
+    <div id="cliente">
           <h1 class="tittle">Nuevo cliente</h1>
-          <div class="blanco blanco2">
+          <form action="" id="formulario2">
+          <div class="blanco2">
             <label for="nombre">Nombre: </label>
             <input type="text" name="nombre" id="nombre"><br><br>
 
             <label for="sexo">Sexo: </label>
             <input type="radio" name="sexo" id="hombre">Hombre</input>
-            <input type="radio" name="sexo" id="mujer">Mujer</input><br><br>
+            <input type="radio" name="sexo" id="mujer" checked>Mujer</input><br><br>
 
             <label for="Edad">Edad: </label>
             <input type="text" name="edad" id="edad" placeholder="20"><br><br>
 
             <label for="altura" id="altura">Altura (cm): </label>
-            <input type="text" name="altura" id="altura" placeholder="165"><br><br>
+            <input type="number" name="altura" id="altura" value="165"><br><br>
 
             <label for="peso" id="peso">Peso: </label>
-            <input type="text" name="peso" id="peso" placeholder="65"><br><br>
+            <input type="number" name="peso" id="peso" value="65"><br><br>
 
             <label for="actividad" id="actividad">Actividad física: </label>
             <select id="actividad" name="actividad">
@@ -140,10 +127,10 @@
             </select><br><br>
 
 
-          <button type="submit" form="formulario2" value="submit" class="boton2">
+          <button type="button" value="addClient" class="boton2">
             Añadir cliente
           </button>
-          <button type="submit" form="formulario2" value="submit" class="boton3">
+          <button type="button" value="back" class="boton3" onclick="volverAtras()">
             Volver atrás
           </button>
           </div>

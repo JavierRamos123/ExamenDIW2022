@@ -46,7 +46,12 @@ td {
 }
 
 .boton {
-  margin-left: 45% !important;
+  margin: 0;
+  position: relative;
+  top: 4%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -55,7 +60,7 @@ td {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: -5px 2px;
+  margin: -20px 2px;
   cursor: pointer;
   border-radius: 15px;
 }
@@ -67,11 +72,11 @@ td {
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 52px 130px;
     cursor: pointer;
     border-radius: 15px;
+    margin-left: 22.5%;
+    margin-right: 5%;
+    margin-top: 22.5px;
     border:1px solid black;
 }
 
@@ -84,28 +89,23 @@ td {
     border-radius: 15px;
 }
 
-#cliente{
-    margin: 600px;
-    width: 700px !important;
-    /* display: none !important; */
-}
-
-.blanco2{
-    width: 700px !important;
-}
-
-.container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: lightgray;
+#container, #cliente{
+  margin: 0;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: lightgray;
   border: 1px solid black;
   border-radius: 20px;
-  height: 45%;
+  height: 57%;
 }
+
+#cliente{
+  height: 43%;
+}
+
 
 .tittle {
   text-align: center !important;
@@ -114,7 +114,9 @@ td {
 }
 
 .footer {
-  text-align: center;
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
   font-family: "Fredoka";
   font-weight: bolder;
 }
@@ -122,7 +124,43 @@ td {
 .blanco {
   background-color: white;
   width: 100%;
-  height: 290px;
+  height: 410px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+.blanco2{
+  background-color: white;
+  width: 650px;
+  height: 250px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.hombre{
+  background-color: rgb(112, 144, 247);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.mujer{
+  background-color: rgb(255, 172, 186);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.actividad{
+  background-color: rgb(190, 190, 190);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+form#formulario2>*:first-child{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+form#formulario2 label{
+  margin-left:30%;
+  
 }
