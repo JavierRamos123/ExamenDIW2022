@@ -1,3 +1,128 @@
 /* Nombre del alumno*/
 /* JAVIER RAMOS DEL RIO*/
 /*# sourceMappingURL=style.css.map */
+
+* {
+  font-size: 16px;
+}
+
+body {
+  background: rgb(66, 28, 0);
+  background: linear-gradient(
+    135deg,
+    rgba(66, 28, 0, 1) 0%,
+    rgba(213, 134, 0, 1) 20%,
+    rgba(153, 130, 69, 1) 45%,
+    rgba(204, 245, 254, 1) 100%
+  );
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 30px auto;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+th {
+  font-family: "Fredoka";
+  background-color: orange;
+}
+
+th,
+td {
+  border: 1px solid orange;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: orange;
+}
+
+td {
+  width: 8rem;
+}
+
+.boton {
+  margin-left: 45% !important;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -5px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.boton2{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 52px 130px;
+    cursor: pointer;
+    border-radius: 15px;
+    border:1px solid black;
+}
+
+.boton3{
+    background-color: darkgray;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#cliente{
+    margin: 600px;
+    width: 700px !important;
+    /* display: none !important; */
+}
+
+.blanco2{
+    width: 700px !important;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 45%;
+}
+
+.tittle {
+  text-align: center !important;
+  font-family: "Fredoka";
+  font-size: 30px;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Fredoka";
+  font-weight: bolder;
+}
+
+.blanco {
+  background-color: white;
+  width: 100%;
+  height: 290px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
