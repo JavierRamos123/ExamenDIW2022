@@ -1,6 +1,8 @@
 # Examen Diseño de Interfaces Web
 ##JAVIER RAMOS DEL RIO
 
+##Nota esperada: 7
+
 ### Instrucciones:
 
 Esta prueba tiene como finalidad evaluar los aprendizajes de __Diseño de Interfaces Web__.
